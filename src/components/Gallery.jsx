@@ -1,4 +1,3 @@
-
 import React from "react";
 import {
   AppBar,
@@ -11,10 +10,13 @@ import {
   Paper,
   Grow,
   Button,
+  Grid,
 } from "@mui/material";
 
-function Gallery(){
-    return (
+import images from "../assets/index";
+
+function Gallery() {
+  return (
     <Box
       sx={{
         display: "flex",
@@ -23,8 +25,17 @@ function Gallery(){
         height: "100%",
       }}
     >
-
-    </Box>)
+      <Grid
+        container
+        spacing={{ xs: 2, md: 3 }}
+        columns={{ xs: 4, sm: 8, md: 12 }}
+      >
+        <Grid item spacing={{ xs: 12 }}>
+          <Typography>9</Typography>
+        </Grid>
+      </Grid>
+    </Box>
+  );
 }
 
 export default Gallery;
