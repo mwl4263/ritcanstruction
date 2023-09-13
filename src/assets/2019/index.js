@@ -13,4 +13,19 @@ import img12 from './IMG_0708.jpeg';
 import img13 from './IMG_0709.jpeg';
 import img14 from './IMG_0710.jpeg';
 
-export { img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14 }
+export {
+    img14,
+    img13,
+    img12,
+    img11,
+    img10,
+    img9,
+    img8,
+    img7,
+    img6,
+    img5,
+    img4,
+    img3,
+    img2,
+    img1,
+};

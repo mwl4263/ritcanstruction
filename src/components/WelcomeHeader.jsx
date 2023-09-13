@@ -33,10 +33,7 @@ function WelcomeHeader({ animtationDone, setAnimationDone }) {
   useEffect(() => {
     if (openingAnimation === false) {
       setTimeout(() => {
-        setStamp(false);
-        setShowTo(false);
-        setShowCan(false);
-        setShowWelc(false);
+
         setTimeout(() => {
           setAnimationDone(true);
         }, 2000);
@@ -45,7 +42,7 @@ function WelcomeHeader({ animtationDone, setAnimationDone }) {
   }, [openingAnimation]);
 
   return (
-    <Box sx={{ display: "flex" }}>
+    <Box sx={{ display: "flex" ,mt: 5}}>
       <Box sx={{ flexDirection: "column", display: "inline-flex" }}>
         <Slide
           sx={{ margin: 3 }}
