@@ -50,7 +50,7 @@ function WhatIsIt(isShowing) {
         {Object.values(allImages2019).reverse().map((item, index) => {
           return (
             <Grid item  spacing={{ xs: 4 }} sx={{ m: 2}}>
-              <img src={item} height="300px"></img>
+              <img  className="gallery-image" src={item} height="300px"></img>
             </Grid>
           );
         })}
@@ -64,7 +64,7 @@ function WhatIsIt(isShowing) {
         {Object.values(allImages2018).reverse().map((item, index) => {
           return (
             <Grid item  spacing={{ xs: 4 }} sx={{ m: 2}}>
-              <img src={item} height="300px"></img>
+              <img className="gallery-image" src={item} height="300px"></img>
             </Grid>
           );
         })}
