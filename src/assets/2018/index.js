@@ -29,7 +29,7 @@ import img28 from "./IMG_4213.jpg";
 import img29 from "./IMG_4214.jpg";
 import img30 from "./IMG_4219.jpg";
 import img31 from "./IMG_4220.jpg";
-
+import img32 from "./Screenshot.png";
 export {
     img1,
     img2,
@@ -62,4 +62,5 @@ export {
     img29,
     img30,
     img31,
+    img32
 };

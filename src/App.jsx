@@ -4,8 +4,9 @@ import WelcomeHeader from "./components/WelcomeHeader";
 import NavBar from "./components/NavBar";
 import { useEffect, useState } from "react";
 import WhatIsIt from "./components/WhatIsIt";
-import { Divider, Typography } from '@mui/material';
-import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
+import { Divider, Typography } from "@mui/material";
+import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
+import ThisYear from "./components/ThisYear";
 function App() {
   const [animationDone, setAnimationDone] = useState(false);
   const [siteLoaded, setSiteLoaded] = useState(false);
@@ -19,14 +20,24 @@ function App() {
       <header className="App-header">
         <NavBar></NavBar>
         <Divider light></Divider>
-          <WelcomeHeader
-            setAnimationDone={setAnimationDone}
-            animationDone={animationDone}
-          ></WelcomeHeader>
-          <Divider sx={{mt: 5}}></Divider>
-          <ArrowDownwardIcon fontSize="large"></ArrowDownwardIcon>
-          <Divider sx={{mt: 30}}></Divider>
-          <Typography sx={{textDecoration: "underline"}} variant="h2">Past Years</Typography>
+        <WelcomeHeader
+          setAnimationDone={setAnimationDone}
+          animationDone={animationDone}
+        ></WelcomeHeader>
+        <Divider sx={{ mt: 5 }}></Divider>
+        <ArrowDownwardIcon fontSize="large"></ArrowDownwardIcon>
+        <Divider sx={{ mt: 30 }}></Divider>
+
+        <Typography sx={{ textDecoration: "underline" }} variant="h2">
+          This Year
+        </Typography>
+         <Divider sx={{ mt: 5 }}></Divider>
+        <ThisYear></ThisYear>
+        <Divider sx={{ mt: 10 }}></Divider>
+        <Typography sx={{ textDecoration: "underline" }} variant="h2">
+          Past Years
+        </Typography>
+        <Divider sx={{ mt: 10 }}></Divider>
         <WhatIsIt></WhatIsIt>
       </header>
     </div>

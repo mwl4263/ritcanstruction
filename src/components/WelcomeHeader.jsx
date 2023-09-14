@@ -33,7 +33,6 @@ function WelcomeHeader({ animtationDone, setAnimationDone }) {
   useEffect(() => {
     if (openingAnimation === false) {
       setTimeout(() => {
-
         setTimeout(() => {
           setAnimationDone(true);
         }, 2000);
@@ -42,7 +41,7 @@ function WelcomeHeader({ animtationDone, setAnimationDone }) {
   }, [openingAnimation]);
 
   return (
-    <Box sx={{ display: "flex" ,mt: 5}}>
+    <Box sx={{ display: "flex", mt: 5 }}>
       <Box sx={{ flexDirection: "column", display: "inline-flex" }}>
         <Slide
           sx={{ margin: 3 }}
@@ -51,7 +50,7 @@ function WelcomeHeader({ animtationDone, setAnimationDone }) {
           direction={"down"}
           mountOnEnter
         >
-          <Typography variant="h1">Welcome </Typography>
+          <Typography variant="h2">Welcome </Typography>
         </Slide>
         <Slide
           sx={{ margin: 3 }}
@@ -59,7 +58,7 @@ function WelcomeHeader({ animtationDone, setAnimationDone }) {
           in={showTo}
           direction={showTo ? "left" : "down"}
         >
-          <Typography variant="h1"> To </Typography>
+          <Typography variant="h2"> To </Typography>
         </Slide>
         <Slide
           sx={{ margin: 3 }}
@@ -67,7 +66,7 @@ function WelcomeHeader({ animtationDone, setAnimationDone }) {
           timeout={showTo ? 1000 : 2000}
           direction={showCan ? "up" : "down"}
         >
-          <Typography variant="h1"> Canstruction </Typography>
+          <Typography variant="h2"> Canstruction </Typography>
         </Slide>
         <Grow
           timeout={showTo ? 1000 : 3000}
@@ -88,7 +87,7 @@ function WelcomeHeader({ animtationDone, setAnimationDone }) {
             }}
           >
             <Typography
-              variant="h3"
+              variant="h2"
               style={{
                 display: "flex",
                 justifyContent: "center",
