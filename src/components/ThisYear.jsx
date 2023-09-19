@@ -70,7 +70,12 @@ function ThisYear() {
             <ListItem sx={{ textAlign: "center" }}>
               <ListItemText>Neeraj Sugumaran Menon</ListItemText>
             </ListItem>
-
+            <ListItem sx={{ textAlign: "center" }}>
+              <ListItemText>Audrey Gillette</ListItemText>
+            </ListItem>
+            <ListItem sx={{ textAlign: "center" }}>
+              <ListItemText>Jenna Schwartzberg</ListItemText>
+            </ListItem>
           </List>
         </Card>
       </Grid>

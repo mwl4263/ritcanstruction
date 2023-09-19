@@ -50,7 +50,7 @@ function WelcomeHeader({ animtationDone, setAnimationDone }) {
           direction={"down"}
           mountOnEnter
         >
-          <Typography variant="h2">Welcome </Typography>
+          <Typography variant="h2"> Welcome </Typography>
         </Slide>
         <Slide
           sx={{ margin: 3 }}
