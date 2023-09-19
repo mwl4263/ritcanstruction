@@ -21,40 +21,6 @@ import {
 function ThisYear() {
   return (
     <Grid container rowSpacing={1} sx={{ flexDirection: { xs: "column", md: "row"} }} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-      <Grid sx={{ m: "auto" }} item xs={8}>
-        <Card sx={{ m: "auto", width: "70%", p: 4, borderRadius: "10px" }}>
-          <Typography variant="h3">Sponsors</Typography>
-          <List
-            sx={{
-              justifyContent: "center",
-              display: "block",
-              textAlign: "center",
-            }}
-          >
-            <ListItem sx={{ textAlign: "center" }}>
-              <ListItemText>Christa Construction</ListItemText>
-            </ListItem>
-            <ListItem sx={{ textAlign: "center" }}>
-              <ListItemText>The Pike Company</ListItemText>
-            </ListItem>
-            <ListItem sx={{ textAlign: "center" }}>
-              <ListItemText>Garlock Sealing Technologies</ListItemText>
-            </ListItem>
-            <ListItem sx={{ textAlign: "center" }}>
-              <ListItemText>Xerox</ListItemText>
-            </ListItem>
-            <ListItem sx={{ textAlign: "center" }}>
-              <ListItemText>Henrietta Building Supply</ListItemText>
-            </ListItem>
-            <ListItem sx={{ textAlign: "center" }}>
-              <ListItemText>Nichols Construction Team</ListItemText>
-            </ListItem>
-            <ListItem sx={{ textAlign: "center" }}>
-              <ListItemText>IDEX Health & Science, LLC</ListItemText>
-            </ListItem>
-          </List>
-        </Card>
-      </Grid>
       <Grid item  sx={{ m: "auto" }}  xs={8}>
        <Card sx={{ m: "auto", width: "70%", p: 4, borderRadius: "10px" }}>
           <Typography variant="h3">Who's Involved</Typography>
