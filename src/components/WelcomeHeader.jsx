@@ -41,7 +41,7 @@ function WelcomeHeader({ animtationDone, setAnimationDone }) {
   }, [openingAnimation]);
 
   return (
-    <Box sx={{ display: "flex", mt: 5 }}>
+    <Box sx={{ display: "flex", mt: 10 }}>
       <Box sx={{ flexDirection: "column", display: "inline-flex" }}>
         <Slide
           sx={{ margin: 3 }}

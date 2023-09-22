@@ -1,8 +1,9 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import {Card, List, Typography, ListItem, ListItemText} from "@mui/material";
+import {Card, List, Typography, ListItem, ListItemText, Box} from "@mui/material";
 function PastSponsors(){
     return (
+      <Box sx={{width: "100%"}}>
  <Card sx={{ m: "auto", width: "70%", p: 4, borderRadius: "10px" }}>
           <Typography variant="h3">Sponsors</Typography>
           <List
@@ -35,7 +36,8 @@ function PastSponsors(){
               <ListItemText>Golisano College of Computing and Information Sciences</ListItemText>
             </ListItem>
           </List>
-        </Card>);
+        </Card>
+        </Box>);
 
 }
 export default PastSponsors;
