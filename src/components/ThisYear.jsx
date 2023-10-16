@@ -20,9 +20,14 @@ import {
 
 function ThisYear() {
   return (
-    <Grid container rowSpacing={1} sx={{ flexDirection: { xs: "column", md: "row"} }} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-      <Grid item  sx={{ m: "auto" }}  xs={8}>
-       <Card sx={{ m: "auto", width: "70%", p: 4, borderRadius: "10px" }}>
+    <Grid
+      container
+      rowSpacing={1}
+      sx={{ flexDirection: { xs: "column", md: "row" } }}
+      columnSpacing={{ xs: 1, sm: 2, md: 3 }}
+    >
+      <Grid item sx={{ m: "auto" }} xs={8}>
+        <Card sx={{ m: "auto", width: "70%", p: 4, borderRadius: "10px" }}>
           <Typography variant="h3">Who's Involved</Typography>
           <List
             sx={{
@@ -64,7 +69,7 @@ function ThisYear() {
             <ListItem sx={{ textAlign: "center" }}>
               <ListItemText>Mason Lapine</ListItemText>
             </ListItem>
-           <ListItem sx={{ textAlign: "center" }}>
+            <ListItem sx={{ textAlign: "center" }}>
               <ListItemText>Tanisa Samaddar</ListItemText>
             </ListItem>
             <ListItem sx={{ textAlign: "center" }}>

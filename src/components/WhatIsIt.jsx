@@ -13,7 +13,7 @@ import {
   Grid,
   Button,
 } from "@mui/material";
-
+import spaceinvader from "../assets/2023/cans2.png";
 import pastPhoto1 from "../assets/past1.jpeg";
 import * as allImages2018 from "../assets/2018/index";
 import * as allImages2019 from "../assets/2019/index";
@@ -42,13 +42,31 @@ function WhatIsIt(isShowing) {
       >
         <Grid item spacing={{ xs: 12 }} sx={{ width: "100%", mt: 10, mb: 10 }}>
           <Box sx={{ width: "100%", textAlign: "center", display: "block" }}>
-            <Typography variant="h2" sx={{ width: "100%" }}>
+            <Typography variant="h3" sx={{ width: "100%" }}>
+              2023 (Coming Soon)
+            </Typography>
+          </Box>
+        </Grid>
+
+        <Grid item spacing={{ xs: 4 }} sx={{ m: 2 }}>
+          <img
+            className="gallery-image"
+            src={spaceinvader}
+            height="400px"
+          ></img>
+        </Grid>
+        <Grid item spacing={{ xs: 12 }} sx={{ width: "100%", mt: 10, mb: 10 }}>
+          <Typography variant="h2">Past Years</Typography>
+        </Grid>
+        <Grid item spacing={{ xs: 12 }} sx={{ width: "100%", mt: 10, mb: 10 }}>
+          <Box sx={{ width: "100%", textAlign: "center", display: "block" }}>
+            <Typography variant="h3" sx={{ width: "100%" }}>
               2019
             </Typography>
           </Box>
         </Grid>
 
-        <PastSponsors/>
+        <PastSponsors />
 
         {Object.values(allImages2019)
           .reverse()
@@ -61,7 +79,7 @@ function WhatIsIt(isShowing) {
           })}
         <Grid item spacing={{ xs: 12 }} sx={{ width: "100%", mt: 10 }}>
           <Box sx={{ width: "100%", textAlign: "center", display: "block" }}>
-            <Typography variant="h2" sx={{ width: "100%" }}>
+            <Typography variant="h3" sx={{ width: "100%" }}>
               2018
             </Typography>
           </Box>

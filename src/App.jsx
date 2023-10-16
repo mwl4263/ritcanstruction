@@ -7,6 +7,7 @@ import WhatIsIt from "./components/WhatIsIt";
 import { Divider, Typography } from "@mui/material";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import ThisYear from "./components/ThisYear";
+import Description from "./components/Description";
 function App() {
   const [animationDone, setAnimationDone] = useState(false);
   const [siteLoaded, setSiteLoaded] = useState(false);
@@ -27,17 +28,15 @@ function App() {
         <Divider sx={{ mt: 5 }}></Divider>
         <ArrowDownwardIcon fontSize="large"></ArrowDownwardIcon>
         <Divider sx={{ mt: 30 }}></Divider>
-
-        <Typography sx={{ textDecoration: "underline" }} variant="h2">
-          This Year
-        </Typography>
-         <Divider sx={{ mt: 5 }}></Divider>
+        <Typography variant="h2">What is it?</Typography>
+        <Divider sx={{ mt: 5 }}></Divider>
+        <Description />
+        <Divider sx={{ mt: 5 }}></Divider>
+        <Typography variant="h2">This Year</Typography>
+        <Divider sx={{ mt: 5 }}></Divider>
         <ThisYear></ThisYear>
         <Divider sx={{ mt: 10 }}></Divider>
-        <Typography sx={{ textDecoration: "underline" }} variant="h2">
-          Past Years
-        </Typography>
-        <Divider sx={{ mt: 10 }}></Divider>
+
         <WhatIsIt></WhatIsIt>
       </header>
     </div>

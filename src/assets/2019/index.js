@@ -12,21 +12,21 @@ import img11 from "./IMG_0707.jpg";
 import img12 from "./IMG_0708.jpg";
 import img13 from "./IMG_0709.jpg";
 import img14 from "./IMG_0710.jpg";
-import img15 from "./cad.jpg"
+import img15 from "./cad.jpg";
 export {
-    img15,
-    img14,
-    img13,
-    img12,
-    img11,
-    img10,
-    img9,
-    img8,
-    img7,
-    img6,
-    img5,
-    img4,
-    img3,
-    img2,
-    img1,
+  img15,
+  img14,
+  img13,
+  img12,
+  img11,
+  img10,
+  img9,
+  img8,
+  img7,
+  img6,
+  img5,
+  img4,
+  img3,
+  img2,
+  img1,
 };
