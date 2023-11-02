@@ -4,7 +4,7 @@ const int directionPin = 51;
 const int stepPin = 49;
 
 // Other constants
-const int NumSteps = 30000; // steps
+const int NumSteps = 32500; // steps
 const int Speed = 50; // how fast the motor will "step"
 
 void setup() {
@@ -16,15 +16,15 @@ void setup() {
 }
 
 void loop() {
-
+    int del = random(3000, 10000);
     // Move in one direction
-    for (float distance = 0.5; distance < 32500; distance += 0.5) {
+    for (float distance = 0.5; distance < NumSteps; distance += 0.5) {
       digitalWrite(stepPin, HIGH);
       delayMicroseconds(Speed);
       digitalWrite(stepPin, LOW);
       delayMicroseconds(Speed);
     }
-    delay(5000);
+    delay(del);
     // Reverse direction
     digitalWrite(directionPin, !digitalRead(directionPin));
 
