@@ -13,6 +13,8 @@ void setup() {
   pinMode(stepPin, OUTPUT);
   digitalWrite(directionPin, LOW);
   digitalWrite(stepPin, LOW);
+    Serial.begin(9600);
+
 }
 
 void loop() {
@@ -26,6 +28,7 @@ void loop() {
     }
     delay(del);
     // Reverse direction
+    Serial.println(digitalRead(directionPin));
     digitalWrite(directionPin, !digitalRead(directionPin));
 
 }
